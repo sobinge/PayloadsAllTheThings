@@ -168,7 +168,7 @@ http://127.1.1.1:80:\@@127.2.2.2:80/
 http://127.1.1.1:80#\@127.2.2.2:80/
 ```
 
-![https://github.com/swisskyrepo/PayloadsAllTheThings/raw/master/SSRF%20injection/SSRF_Parser.png](https://github.com/swisskyrepo/PayloadsAllTheThings/raw/master/SSRF%20injection/WeakParser.jpg)
+![https://github.com/swisskyrepo/PayloadsAllTheThings/raw/master/SSRF%20injection/Images/SSRF_Parser.png](https://github.com/swisskyrepo/PayloadsAllTheThings/raw/master/SSRF%20injection/Images/WeakParser.jpg)
 
 
 ## SSRF via URL Scheme
@@ -462,16 +462,15 @@ curl http://rancher-metadata/<version>/<path>
 
 More info: https://rancher.com/docs/rancher/v1.6/en/rancher-services/metadata-service/
 
-## Examples
 
+## References
+
+- [ESEA Server-Side Request Forgery and Querying AWS Meta Data](http://buer.haus/2016/04/18/esea-server-side-request-forgery-and-querying-aws-meta-data/) by Brett Buerhaus
 - [SSRF and local file read in video to gif converter](https://hackerone.com/reports/115857)
 - [SSRF in https://imgur.com/vidgif/url](https://hackerone.com/reports/115748)
 - [SSRF in proxy.duckduckgo.com](https://hackerone.com/reports/358119)
 - [Blind SSRF on errors.hackerone.net](https://hackerone.com/reports/374737)
 - [SSRF on *shopifycloud.com](https://hackerone.com/reports/382612)
-
-## Thanks to
-
 - [Hackerone - How To: Server-Side Request Forgery (SSRF)](https://www.hackerone.com/blog-How-To-Server-Side-Request-Forgery-SSRF)
 - [Awesome URL abuse for SSRF by @orange_8361 #BHUSA](https://twitter.com/albinowax/status/890725759861403648)
 - [How I Chained 4 vulnerabilities on GitHub Enterprise, From SSRF Execution Chain to RCE! Orange Tsai](http://blog.orange.tw/2017/07/how-i-chained-4-vulnerabilities-on.html)

@@ -7,8 +7,9 @@ Check the following sub-sections, located in other files :
 * [Java deserialization : ysoserial, ...](Java.md)
 * [PHP (Object injection) : phpggc, ...](PHP.md)
 * [Ruby : universal rce gadget, ...](Ruby.md)
+* [Python : pickle, ...](Python.md)
 
-## Thanks to
+## References
 
 * [Github - ysoserial](https://github.com/frohoff/ysoserial)
 * [Java-Deserialization-Cheat-Sheet - GrrrDog](https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet/blob/master/README.md)
@@ -20,3 +21,7 @@ Check the following sub-sections, located in other files :
 * [PHP unserialize](http://php.net/manual/en/function.unserialize.php)
 * [PHP Generic Gadget - ambionics security](https://www.ambionics.io/blog/php-generic-gadget-chains)
 * [RUBY 2.X UNIVERSAL RCE DESERIALIZATION GADGET CHAIN - elttam, Luke Jahnke](https://www.elttam.com.au/blog/ruby-deserialization/)
+* [Java Deserialization in manager.paypal.com](http://artsploit.blogspot.hk/2016/01/paypal-rce.html) by Michael Stepankin
+* [Instagram's Million Dollar Bug](http://www.exfiltrated.com/research-Instagram-RCE.php) by Wesley Wineberg 
+* [(Ruby Cookie Deserialization RCE on facebooksearch.algolia.com](https://hackerone.com/reports/134321) by Michiel Prins (michiel)
+* [Java deserialization](https://seanmelia.wordpress.com/2016/07/22/exploiting-java-deserialization-via-jboss/) by meals

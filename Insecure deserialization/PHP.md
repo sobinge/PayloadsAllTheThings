@@ -146,7 +146,14 @@ echo urlencode(serialize(new PHPObjectInjection));
 phpggc monolog/rce1 'phpinfo();' -s
 ```
 
-## Thanks to
+## Real world examples
+
+* [Vanilla Forums ImportController index file_exists Unserialize Remote Code Execution Vulnerability - Steven Seeley](https://hackerone.com/reports/410237)
+* [Vanilla Forums Xenforo password splitHash Unserialize Remote Code Execution Vulnerability - Steven Seeley](https://hackerone.com/reports/410212)
+* [Vanilla Forums domGetImages getimagesize Unserialize Remote Code Execution Vulnerability (critical) - Steven Seeley](https://hackerone.com/reports/410882)
+* [Vanilla Forums Gdn_Format unserialize() Remote Code Execution Vulnerability - Steven Seeley](https://hackerone.com/reports/407552)
+
+## References
 
 * [PHP Object Injection - OWASP](https://www.owasp.org/index.php/PHP_Object_Injection)
 * [PHP Object Injection - Thin Ba Shane](http://location-href.com/php-object-injection/)

